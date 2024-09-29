@@ -1,0 +1,5 @@
+<resources>
+    <style name="HintTextStyle">
+        <item name="android:textColor">#80FF0000</item> <!-- Warna merah dengan 50% transparansi -->
+    </style>
+</resources>

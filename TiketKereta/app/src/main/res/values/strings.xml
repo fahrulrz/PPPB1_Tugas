@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tiket Kereta</string>
+    <string name="nama_hint"><font size="15sp">Nama Pesenan</font></string>
+    <string name="pemesanan_tiket_kereta">Pemesanan\nTiket Kereta</string>
+    <string name="nama_pemesan">Nama Pemesan</string>
+    <string name="jam_keberangkatan">Jam Keberangkatan</string>
+    <string name="pilih_tanggal_keberangkatan">Pilih Tanggal Keberangkatan</string>
+    <string name="pesan_tiket">Pesan Tiket</string>
+    <string name="berhasil_mendapatkan">Berhasil Mendapatkan\nTiket !</string>
+    <string name="nama">Nama</string>
+    <string name="jam">Jam</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="tujuan">Tujuan</string>
+    <string name="beli">Beli</string>
+    <string name="batal">Batal</string>
+    <string name="rp200_000">Rp200.000</string>
+    <string name="tarif_tiket">Tarif Tiket</string>
+    <string name="konfirmasi_pemesanan">Konfirmasi Pemesanan</string>
+    <array name="tujuan">
+        <item>Tujuan</item>
+        <item>Aceh</item>
+        <item>Bali</item>
+        <item>Jakarta</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+    </array>
+</resources>
