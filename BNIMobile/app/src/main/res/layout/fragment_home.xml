@@ -3,80 +3,252 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-<!--    guide line-->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_top"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".04"/>
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/txtUsername"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/hint"
-        android:letterSpacing=".05"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="Selamat Malam, Ikhwan Hanip Pridauz"
-        app:layout_constraintTop_toBottomOf="@id/guideline_top"/>
-
-    <ImageView
-        android:id="@+id/bni_logo"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="-30dp"
-        android:layout_marginStart="20dp"
-        android:src="@drawable/bni"
-        app:layout_constraintTop_toBottomOf="@id/txtUsername"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <TextView
-        android:id="@+id/saldo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
-        android:text="Saldo"
-        android:textSize="20sp"
-        android:layout_marginStart="20dp"
-        android:textStyle="bold"
-        android:letterSpacing=".02"
-        app:layout_constraintTop_toBottomOf="@id/bni_logo"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <include
-        layout="@layout/line_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@id/saldo"
-        />
-
-    <androidx.cardview.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:cardElevation="8dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintTop_toBottomOf="@id/saldo">
-
-        <include
-            layout="@layout/activity_quick_action"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
 
-    </androidx.cardview.widget.CardView>
+            <!--    guide line-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".04"/>
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint"
+                android:letterSpacing=".05"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Selamat Malam, Ikhwan Hanip Pridauz"
+                app:layout_constraintTop_toBottomOf="@id/guideline_top"/>
+
+            <ImageView
+                android:id="@+id/bni_logo"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/bni"
+                app:layout_constraintTop_toBottomOf="@id/txtUsername"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:text="Saldo"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:letterSpacing=".02"
+                app:layout_constraintTop_toBottomOf="@id/bni_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <include
+                layout="@layout/line_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/saldo"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/quick_action"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardElevation="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintTop_toBottomOf="@id/saldo">
+
+                <include
+                    layout="@layout/activity_quick_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/shorcut_kamu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shortcut Kamu"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:letterSpacing=".02"
+                app:layout_constraintTop_toBottomOf="@id/quick_action"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shorcut_kamu">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/transfer_uang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shorcut_kamu"
+                    android:drawableStart="@drawable/transfer"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Transfer Uang"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/virtual_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shorcut_kamu"
+                    android:drawableStart="@drawable/debit"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Virtual Account"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/pulsa_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shorcut_kamu"
+                    android:drawableStart="@drawable/hp"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Pulsa / Data"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/menu_lengkap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shorcut_kamu"
+                    android:drawableStart="@drawable/more"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Menu Lengkap"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/insight_bni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insight BNI"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:letterSpacing=".02"
+                app:layout_constraintTop_toBottomOf="@id/line2"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizonral_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/insight_bni">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:paddingStart="20dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ft1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ft2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ft1" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
