@@ -92,14 +92,15 @@
         app:layout_constraintTop_toTopOf="@id/short_info"
         app:layout_constraintBottom_toBottomOf="@id/short_info"/>
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/tarik_tunai"
         android:layout_width="wrap_content"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:textSize="12sp"
         android:background="@drawable/quixk_action"
+        android:textAllCaps="false"
         android:text="Tarik Tunai"
         android:backgroundTint="@color/orange"
         android:textColor="@color/white"
@@ -108,12 +109,13 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/setor_tunai"
         android:layout_width="wrap_content"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:textSize="12sp"
         android:paddingStart="15dp"
+        android:textAllCaps="false"
         android:paddingEnd="15dp"
         android:layout_marginStart="10dp"
         android:text="Setor Tunai"
