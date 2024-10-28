@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <fragment
-        android:id="@+id/nav_host_fragment"
+        android:id="@+id/nav_host_bottom_fragment"
         android:layout_width="match_parent"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_height="wrap_content"
@@ -17,7 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/bottom_navigation"
         />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

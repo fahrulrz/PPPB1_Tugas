@@ -37,7 +37,7 @@
                 android:letterSpacing=".05"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="Selamat Malam, Ikhwan Hanip Pridauz"
+                android:text="Selamat Malam, Windah"
                 app:layout_constraintTop_toBottomOf="@id/guideline_top"/>
 
             <ImageView
@@ -123,6 +123,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
                     android:layout_weight="1"
                     android:background="@drawable/shorcut_kamu"
                     android:drawableStart="@drawable/transfer"
@@ -143,6 +144,7 @@
                     android:background="@drawable/shorcut_kamu"
                     android:drawableStart="@drawable/debit"
                     android:drawablePadding="5dp"
+                    android:textColor="@color/black"
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp"
                     android:text="Virtual Account"
@@ -164,6 +166,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
                     android:layout_weight="1"
                     android:background="@drawable/shorcut_kamu"
                     android:drawableStart="@drawable/hp"
@@ -175,6 +178,7 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/menu_lengkap"
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginStart="10dp"
