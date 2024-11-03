@@ -1,5 +1,6 @@
 package com.example.recycleviewfilm
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.widget.ImageView
@@ -14,6 +15,7 @@ import com.example.recycleviewfilm.databinding.FilmCardBinding
 
 class DetailFilm : AppCompatActivity() {
     private lateinit var binding: DetailFilm
+    @SuppressLint("SuspiciousIndentation")
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
